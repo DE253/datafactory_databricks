@@ -1,10 +1,6 @@
 {
 	"name": "copieddata",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "bronzestorage",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
