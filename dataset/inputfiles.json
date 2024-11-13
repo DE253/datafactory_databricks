@@ -1,0 +1,47 @@
+{
+	"name": "inputfiles",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "data_source_baclend",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"srccontainer": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": {
+					"value": "@dataset().srccontainer",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "account_id",
+				"type": "String"
+			},
+			{
+				"name": "customer_id",
+				"type": "String"
+			},
+			{
+				"name": "account_type",
+				"type": "String"
+			},
+			{
+				"name": "balance",
+				"type": "String"
+			}
+		]
+	}
+}
