@@ -1,10 +1,6 @@
 {
 	"name": "cleaneddata",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "cleaneddata",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

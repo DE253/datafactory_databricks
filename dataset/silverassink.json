@@ -1,10 +1,6 @@
 {
 	"name": "silverassink",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "bronzetosilver",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
