@@ -1,0 +1,42 @@
+{
+	"name": "cleaneddata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "cleaneddata",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "part-00000-tid-7843773515758180079-bf13967a-365a-47ae-a354-7d2d491746ed-43-1-c000.csv",
+				"folderPath": "cleaned_accounts.csv",
+				"fileSystem": "bronze"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "45",
+				"type": "String"
+			},
+			{
+				"name": "1",
+				"type": "String"
+			},
+			{
+				"name": "Savings",
+				"type": "String"
+			},
+			{
+				"name": "1000.50",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
