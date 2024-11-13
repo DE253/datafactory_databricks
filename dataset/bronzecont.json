@@ -1,0 +1,30 @@
+{
+	"name": "bronzecont",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "data_storage_bronze",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Bronzeinput": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": {
+					"value": "@dataset().Bronzeinput",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
